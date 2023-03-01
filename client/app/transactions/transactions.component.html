@@ -1,0 +1,25 @@
+<h2>Orders Details</h2>
+<table class="table" id='tab'>
+  <thead>
+  <tr>
+    <th scope="col">Transaction Id</th>
+    <th scope="col">Product Code</th>
+    <th scope="col">Product Name</th>
+    <th scope="col">Product Quantity</th>
+    <th scope="col">Product Price</th>
+    <th scope="col">Product Total Price</th>
+    <th scope="col">Product Order Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let transaction of transactions">
+    <td>{{ transaction.transactionId }}</td>
+    <td>{{ transaction.productCode }}</td>
+    <td>{{ transaction.name }}</td>
+    <td>{{ transaction.quantity }}</td>
+    <td>{{ transaction.price | currency:'INR'}}</td>
+    <td>{{ transaction.totalPrice | currency:'INR'}}</td>
+    <td>{{ transaction.createdDate | date}}</td>
+  </tr>
+  </tbody>
+</table>

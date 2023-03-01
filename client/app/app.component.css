@@ -1,0 +1,18 @@
+.container{
+  margin: 0px 10%;
+}
+.header-content{
+  padding: 0px 10%;
+}
+.mat-toolbar h1{
+  font: 500 32px/19px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  margin: 0;
+  /* font-size: 20px; */
+}
+table, th, td {
+  border: 1px solid;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  padding: 0px 0px;
+}
